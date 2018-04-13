@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/html/inter/app/Permission.php</file>
+            <file>file:/var/www/html/inter/database/migrations/2018_03_27_215142_create_permissions_table.php</file>
+            <file>file:/var/www/html/inter/database/migrations/2018_03_27_220753_change_role_user_table.php</file>
+            <file>file:/var/www/html/inter/database/migrations/2018_03_27_220902_change_permission_role_table.php</file>
+            <file>file:/var/www/html/inter/app/Role.php</file>
+            <file>file:/var/www/html/inter/database/migrations/2018_03_27_215244_create_permission_role_table.php</file>
+            <file>file:/var/www/html/inter/database/migrations/2018_03_27_215039_create_roles_table.php</file>
+            <file>file:/var/www/html/inter/app/User.php</file>
+            <file>file:/var/www/html/inter/database/migrations/2018_03_27_215612_create_role_user_table.php</file>
+        </group>
+    </open-files>
+</project-private>
