@@ -14,9 +14,6 @@ Route::resource('articles','ArticlesController',[
 
 Route::get('articles/cat/{cat_alias}',['uses'=> 'ArticlesController@index','as'=>'articlesCat'])->where('cat_alias','[\w-]+');
 
-Route::get('tester',['uses' => 'TesterController@index']);
-Route::get('testadm',['uses' => 'Admin\TesterController@index']);
-
 Route::resource('comment','CommentController',['only'=>['store']]);
 
 Route::match(['get','post'],'/contacts',['uses'=>'ContactsController@index','as'=>'contacts']);
