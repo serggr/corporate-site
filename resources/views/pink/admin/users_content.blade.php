@@ -18,14 +18,14 @@
                         @foreach($users as $user)
                         <tr>
                             <td>{{ $user->id }}</td>
-                            <td>{!! Html::link(route('admin.users.edit',['users' => $user->id])) !!}</td>
+                            <td>{!! Html::link(route('admin.users.edit',['users' => $user->id]),$user->name) !!}</td>
                             <td>{{ $user->email }}</td>
                             <td>{{ $user->login }}</td>
                             <td>{{ $user->roles->implode('name',', ') }}</td>
                             <td>
-                                {!! Form::open(['url'=>route('admin.users.destroy',['users'=> ) ]) !!}
-                                {!! method_field('DELETE') }}
-                                {!! Form::button('Удалить') !!}
+                                {!! Form::open(['url'=>route('admin.users.destroy',['users'=>$user->id]) ]) !!}
+                                {!! method_field('DELETE') !!}
+                                {!! Form::button('Удалить', ['class' => 'btn btn-french-5', 'type'=>'submit']) !!}
                                 {!! Form::close() !!}
                             </td>
                         </tr>
@@ -34,7 +34,8 @@
 
                 </table>
             </div>
-            {!! Html::link(route('admin.users.create'),'Добавить пользователя',['
+            {!! Html::link(route('admin.users.create'),'Добавить пользователя',['class' => 'btn btn-the-salmon-dance-3']) !!}
+            
             
             
 <!--        </form>        -->
